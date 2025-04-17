@@ -9,7 +9,7 @@ async function initDb() {
   const config = await getConfig();
 
   const client = new DynamoDBClient({
-    region: config.awsRegion || 'us-east-1',
+    region: config.awsRegion || 'us-central-1',
   });
 
   docClient = DynamoDBDocumentClient.from(client);
