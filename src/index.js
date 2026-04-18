@@ -12,14 +12,14 @@ const app = express();
 
 // Enable CORS with explicit OPTIONS handling
 app.use(cors({
-  origin: 'https://frontend.classof42.online',
+  origin: 'https://frontend.devopscurtis.online',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Handle OPTIONS preflight requests explicitly
 app.options('*', cors({
-  origin: 'https://frontend.classof42.online',
+  origin: 'https://frontend.devopscurtis.online',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
